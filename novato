@@ -1,1 +1,45 @@
+#include <stdio.h>
 
+int main(void) {
+    /* Nível Novato: sem laços e sem condicionais */
+
+    int pop1, pontos1, pop2, pontos2;
+    float area1, pib1, area2, pib2;
+
+    /* Carta 1 */
+    printf("=== Cadastro Carta 1 ===\n");
+    printf("Populacao (int): ");
+    scanf("%d", &pop1);
+    printf("Area (float): ");
+    scanf("%f", &area1);
+    printf("PIB (float): ");
+    scanf("%f", &pib1);
+    printf("Pontos turisticos (int): ");
+    scanf("%d", &pontos1);
+
+    /* Carta 2 */
+    printf("\n=== Cadastro Carta 2 ===\n");
+    printf("Populacao (int): ");
+    scanf("%d", &pop2);
+    printf("Area (float): ");
+    scanf("%f", &area2);
+    printf("PIB (float): ");
+    scanf("%f", &pib2);
+    printf("Pontos turisticos (int): ");
+    scanf("%d", &pontos2);
+
+    /* Exibicao */
+    printf("\n--- Dados da Carta 1 ---\n");
+    printf("Populacao: %d\n", pop1);
+    printf("Area: %.2f\n", area1);
+    printf("PIB: %.2f\n", pib1);
+    printf("Pontos turisticos: %d\n", pontos1);
+
+    printf("\n--- Dados da Carta 2 ---\n");
+    printf("Populacao: %d\n", pop2);
+    printf("Area: %.2f\n", area2);
+    printf("PIB: %.2f\n", pib2);
+    printf("Pontos turisticos: %d\n", pontos2);
+
+    return 0;
+}
