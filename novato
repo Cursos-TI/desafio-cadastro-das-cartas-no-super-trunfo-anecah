@@ -1,8 +1,6 @@
 #include <stdio.h>
 
 int main(void) {
-    /* Nível Novato: sem laços e sem condicionais */
-
     int pop1, pontos1, pop2, pontos2;
     float area1, pib1, area2, pib2;
 
