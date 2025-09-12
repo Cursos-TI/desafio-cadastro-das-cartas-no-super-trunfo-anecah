@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(void) {
+    /* Configuração fixa */
+    int v_len = 4, vx = 2, vy = 1;          /* navio vertical */
+    int h_len = 3, hx = 5, hy = 6;          /* navio horizontal */
+
+    int v[4][2], h[3][2];                   /* [i][0]=x, [i][1]=y */
+
+    /* Preenche coordenadas */
+    for (int i = 0; i < v_len; i++) { v[i][0] = vx;       v[i][1] = vy + i; }
+    for (int i = 0; i < h_len; i++) { h[i][0] = hx + i;   h[i][1] = hy;     }
+
+    /* Exibe coordenadas */
+    printf("Navio VERTICAL:\n");
+    for (int i = 0; i < v_len; i++) printf("(%d, %d)\n", v[i][0], v[i][1]);
+
+    printf("\nNavio HORIZONTAL:\n");
+    for (int i = 0; i < h_len; i++) printf("(%d, %d)\n", h[i][0], h[i][1]);
+
+    return 0;
+}
